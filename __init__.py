@@ -57,8 +57,8 @@ class ComedyFilmsSkill(OVOSCommonPlaybackSkill):
             "playback": PlaybackType.VIDEO,
             "skill_icon": self.skill_icon,
             "image": self.skill_icon,
-            "title": "Classic Scifi Horror (Movie Playlist)",
-            "author": "Classic Scifi Horror"
+            "title": "Vintage Comedy Films (Movie Playlist)",
+            "author": "Vintage Comedy Films"
         }
 
     @ocp_search()
@@ -111,7 +111,6 @@ class ComedyFilmsSkill(OVOSCommonPlaybackSkill):
             "uri": video["streams"][0],
             "playback": PlaybackType.VIDEO,
             "skill_icon": self.skill_icon,
-            "bg_image": self.default_bg,
             "skill_id": self.skill_id
         } for video in self.archive.values()]
 
