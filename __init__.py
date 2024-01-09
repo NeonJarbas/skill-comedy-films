@@ -10,7 +10,7 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class ComedyFilmsSkill(OVOSCommonPlaybackSkill):
     def __init__(self, *args, **kwargs):
         self.supported_media = [MediaType.SILENT_MOVIE, MediaType.BLACK_WHITE_MOVIE]
-        self.skill_icon = join(dirname(__file__), "ui", "comedyfilms_icon.gif")
+        self.skill_icon = join(dirname(__file__), "res", "comedyfilms_icon.gif")
         self.archive = {v["streams"][0]: v for v in JsonStorage(f"{dirname(__file__)}/Comedy_Films.json").values()
                         if v["streams"]}
         super().__init__(*args, **kwargs)

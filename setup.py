@@ -14,7 +14,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     package_dir={"skill_comedy_films": ""},
-    package_data={'skill_comedy_films': ['locale/*', 'ui/*']},
+    package_data={'skill_comedy_films': ['locale/*', 'res/*']},
     packages=['skill_comedy_films'],
     include_package_data=True,
     install_requires=["ovos_workshop~=0.0.5a1"],
